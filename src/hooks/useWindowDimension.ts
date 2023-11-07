@@ -6,11 +6,15 @@ function getWindowDimensions() {
     // Client-side-only code
     const { innerWidth: width, innerHeight: height } = window;
   
-  return {
-    width,
-    height,
-  } as any ;
-  
+    return {
+      width,
+      height,
+    } as any ;
+  } else {
+    return {
+      width: 0,
+      height: 0,
+    } as any ;
   }
   
 }
