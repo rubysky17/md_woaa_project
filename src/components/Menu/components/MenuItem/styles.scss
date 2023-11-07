@@ -1,0 +1,16 @@
+.wrapper-menu-item {
+    position: relative;
+    z-index: 1;
+
+    &-image {
+        aspect-ratio: 1 / 1 !important;
+        border-radius: 50%;
+    }
+
+    &-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
